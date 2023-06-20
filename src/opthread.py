@@ -42,7 +42,7 @@ class OperationThread(threading.Thread):
             log(LogLevel.INFO, "処理完了")
 
         except TerminationRequestInterrupt:
-            log(LogLevel.CRITICAL, "処理中断、修了処理…")
+            log(LogLevel.CRITICAL, "処理中断、終了処理…")
 
     def terminate(self):
         """処理中のスレッドを中断する
